@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111; 
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #000;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    color: #ff3333;
+    font-size: 32px;
+}
+
+.logo p {
+    color: #ddd;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff3333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: #222;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 48;
+    color: #ff3333;
+    line-height: 1.2;
+}
+
+.hero-content span {
+    color: #fff;
+}
+
+.hero-content p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.hero-btn {
+    background-color: #ff3333;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    font-size: 19;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #ff4d4d;
+}
+
+.hero-image {
+    width: 500px;
+    border-radius: 10px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #ff3333;
+    margin-bottom: 30px;
+}
+
+.shop-section {
+    background-color: #333;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.shop-btn {
+    background-color: #ff3333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.shop-btn:hover {
+    background-color: #ff4d4d;
+}
+
+.categories-section {
+    padding: 60px 20px;
+    background-color: #222;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    text-align: center;
+    margin: 20px;
+}
+
+.category-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.category-item:hover img {
+    transform: scale(1.1);
+}
+
+.category-item a {
+    display: block;
+    margin-top: 10px;
+    color: #ff3333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.category-item a:hover {
+    color: #fff;
+}
+
+.pricing-section {
+    padding: 60px 20px;
+    background-color: #333;
+    text-align: center;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 300px;
+}
+
+.plan h3 {
+    font-size: 29px;
+    color: #ff3333;
+    margin-bottom: 20px;
+}
+
+.plan p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.plan ul {
+    list-style: none;
+    color: #ddd;
+}
+
+.plan ul li {
+    margin-bottom: 10px;
+}
+
+.products-section {
+    padding: 60px 20px;
+    background-color: #111;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 24px;
+    color: #ff3333;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.product-item .btn {
+    background-color: #ff3333;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.product-item .btn:hover {
+    background-color: #ff4d4d;
+}
+
+.testimonials-section {
+    padding: 60px 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial-item {
+    width: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    color: #ddd;
+}
+
+.testimonial-item p {
+    margin-bottom: 20px;
+}
+
+.testimonial-item h3 {
+    color: #ff3333;
+}
+
+.about-section {
+    padding: 60px 20px;
+    background-color: #111;
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.blog-section {
+    padding: 60px 20px;
+    background-color: #333;
+}
+
+.blog-post {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.blog-post h3 {
+    color: #ff3333;
+    margin-bottom: 20px;
+}
+
+.blog-post p {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.blog-post .btn {
+    background-color: #ff3333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.blog-post .btn:hover {
+    background-color: #ff4d4d;
+}
+
+.newsletter-section {
+    padding: 60px 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+.newsletter-section p {
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+.newsletter-form button {
+    background-color: #ff3333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #ff4d4d;
+}
+
+.contact-section {
+    padding: 60px 20px;
+    background-color: #333;
+}
+
+.contact-section p, .contact-section ul {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.contact-section ul li {
+    margin-bottom: 10px;
+}
+
+.contact-section ul li a {
+    color: #ff3333;
+    text-decoration: none;
+}
+
+.contact-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact-form label {
+    display: block;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444;
+    color: #fff; }
